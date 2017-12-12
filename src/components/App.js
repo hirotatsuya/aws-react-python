@@ -19,6 +19,7 @@ export default class App extends Component {
           <Route exact path='/' component={SignIn} />
           <Route path='/signup' component={SignUp} />
           <Route path='/mypage' component={MyPage} />
+          <Route path='/' render={() => location.href='#'} />
         </Switch>
       </div>
     )
