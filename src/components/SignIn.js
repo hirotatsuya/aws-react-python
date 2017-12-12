@@ -12,8 +12,8 @@ const styles = {
 
 export default class SignIn extends Component {
   state = {
-    username: 'jjj@jjj.jj',
-    password: 'jjjjjj',
+    username: '',
+    password: '',
   }
 
   /**
