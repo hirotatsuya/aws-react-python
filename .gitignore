@@ -6,10 +6,18 @@ dist/*
 !error.html
 
 # lambdaのアップロードのためのライブラリ
-src/lambda/*
+lambda/send_slack_lambda/*
+lambda/get_news_lambda/*
+lambda/get_price_lambda/*
+lambda/bitflyer_public_lambda/*
+lambda/bitflyer_private_lambda/*
 !lambda_function.py
 !requirements.txt
-!check_lambda.py
+
+# bitflyerの設定ファイル
+!lambda/bitflyer_private_lambda/config
+lambda/bitflyer_private_lambda/config/*
+!bitflyer-config.sample.py
 
 # awsの設定ファイル
 src/config/*
