@@ -10,8 +10,13 @@ src/lambda/send_slack_lambda/*
 src/lambda/get_news_lambda/*
 src/lambda/get_price_lambda/*
 src/lambda/bitflyer_public_lambda/*
+src/lambda/bitflyer_private_lambda/*
 !lambda_function.py
 !requirements.txt
+
+# bitflyerの設定ファイル
+src/lambda/bitflyer_private_lambda/config/*
+!bitflyer-config.sample.py
 
 # awsの設定ファイル
 src/config/*
