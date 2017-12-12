@@ -8,8 +8,10 @@ dist/*
 # lambdaのアップロードのためのライブラリ
 src/lambda/send_slack_lambda/*
 src/lambda/get_news_lambda/*
-src/lambda/get_price_lambda/*
 !lambda_function.py
+
+# get_price_lambda
+src/lambda/get_price_lambda/*
 !get_price_function.py
 
 # awsの設定ファイル
