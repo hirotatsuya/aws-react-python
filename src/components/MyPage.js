@@ -8,7 +8,9 @@ import req from 'superagent'
 export default class MyPage extends Component {
   state = {
     text: '',
+    markets: '',
   }
+
   componentWillMount = () => {
     this.cognitoUser = this.signInCheck()
   }
@@ -104,9 +106,28 @@ export default class MyPage extends Component {
       })
   }
 
+  /**
+   * bitflyerのAPIを発火する処理
+   */
+  callBitflyerAPI = () => {
+    console.log('callBitflyerAPI')
+    req.get(config.INVOKE_URL + 'callbitflyer')
+    .set('Content-Type', 'application/json')
+    .end((err, res) => {
+      if (err) {
+        console.log('err', err)
+        return
+      }
+      console.log('res', res)
+      const markets = res.text
+      this.setState({ markets: markets })
+    })
+  }
+
   render() {
     const {
       text,
+      markets,
     } = this.state
 
     return (
@@ -137,6 +158,12 @@ export default class MyPage extends Component {
           onClick={() => this.getPrice()}
         />
         <div>response: {text !== '' ? <span>{text}</span> : null}</div>
+        <hr />
+        <RaisedButton
+          label='CallAPI(callBitflyerAPI)'
+          onClick={() => this.callBitflyerAPI()}
+        />
+        <div>markets: {markets !== '' ? <span>{markets}</span> : null}</div>
       </div>
     )
   }
