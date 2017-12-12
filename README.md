@@ -3,12 +3,12 @@ aws-react-python
 
 ## Description
 ```
-【AWSの勉強のためのプロジェクト】
+【AWSの勉強】
 1. Lambdaによるサーバレスな仕組みの構築
    CloudWatchにより定期的にLambda関数を実行する仕組み
    関数はbitflyerのサイトからビットコインの値段をスクレイピングしてslackに通知
    Lambdaにアップロードする関数はpythonで記述
-2. Cognitoによる認証の仕組みを構築
+2. Cognitoによる認証の仕組みの構築
    認証後のページでAPIGatewayによる関数を実行する仕組み
    アプリケーションはjavascriptで記述
    ライブラリはReactを使用
