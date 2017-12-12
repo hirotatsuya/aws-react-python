@@ -15,6 +15,7 @@ src/lambda/bitflyer_private_lambda/*
 !requirements.txt
 
 # bitflyerの設定ファイル
+!src/lambda/bitflyer_private_lambda/config
 src/lambda/bitflyer_private_lambda/config/*
 !bitflyer-config.sample.py
 
