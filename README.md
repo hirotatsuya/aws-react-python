@@ -48,10 +48,10 @@ aws configure
 - パッケージのインストール
 
 ```
-yarn 
+yarn
 ```
 
-- Lambdaにアップロードするためのライブラリのインストール(`send_slack_lambda`ディレクトリで実行)
+- Lambdaにアップロードするためのライブラリのインストール
 
 ```
 pip install -r requirements.txt -t .
