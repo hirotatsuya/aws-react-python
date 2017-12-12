@@ -54,7 +54,7 @@ yarn
 - Lambdaにアップロードするためのライブラリのインストール(`send_slack_lambda`ディレクトリで実行)
 
 ```
-pip install -r ../requirements.txt -t .
+pip install -r requirements.txt -t .
 ```
 
 
@@ -62,7 +62,7 @@ pip install -r ../requirements.txt -t .
 - python関数の実行
 
 ```
-python send_slack.py
+python check_lambda.py
 ```
 
 - `webpack-dev-server`を起動して、`localhost:4000`にアクセスできるようにする
