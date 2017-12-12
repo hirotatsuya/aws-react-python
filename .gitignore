@@ -6,10 +6,12 @@ dist/*
 !error.html
 
 # lambdaのアップロードのためのライブラリ
-src/lambda/*
+src/lambda/send_slack_lambda/*
+src/lambda/get_news_lambda/*
+src/lambda/get_price_lambda/*
+src/lambda/bitflyer_public_lambda/*
 !lambda_function.py
 !requirements.txt
-!check_lambda.py
 
 # awsの設定ファイル
 src/config/*
