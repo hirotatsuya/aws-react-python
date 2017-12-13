@@ -78,6 +78,12 @@ pip install -r ./requirements.txt -t .
 python check_lambda.py
 ```
 
+- 仮想環境でpython関数の実行
+
+```
+pipenv run python check_lambda.py
+```
+
 - `webpack-dev-server`を起動して、`localhost:4000`にアクセスできるようにする
 
 ```
