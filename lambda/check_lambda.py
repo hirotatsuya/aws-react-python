@@ -6,6 +6,9 @@ from bitflyer_public_lambda import lambda_function
 
 # lambda_function.lambda_handler("tmp", "tmp")
 
-value = lambda_function.lambda_handler("/v1/markets", "tmp")
+event = {
+  "path": "/v1/markets"
+}
+value = lambda_function.lambda_handler(event, "tmp")
 print(value)
 
