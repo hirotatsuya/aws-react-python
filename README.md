@@ -52,10 +52,16 @@ aws configure
 
 
 ## Setup
-- パッケージのインストール
+- nodeのパッケージのインストール
 
 ```
 yarn
+```
+
+- pythonのパッケージのインストール
+
+```
+pipenv install
 ```
 
 - Lambdaにアップロードするためのライブラリのインストール
