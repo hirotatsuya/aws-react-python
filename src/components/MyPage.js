@@ -111,8 +111,13 @@ export default class MyPage extends Component {
    */
   callBitflyerAPI = () => {
     console.log('callBitflyerAPI')
-    req.get(config.INVOKE_URL + 'callbitflyer')
+    const data = {
+      'key_tmp': 'value_tmp',
+      'key2_tmp': 'value2_tmp'
+    }
+    req.get(config.INVOKE_URL_BY_BITFLYER + 'public')
     .set('Content-Type', 'application/json')
+    .send(data)
     .end((err, res) => {
       if (err) {
         console.log('err', err)
