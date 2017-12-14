@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -59,7 +58,18 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: __dirname + '/src/images/icon.png',
-    }),
-    new webpack.optimize.UglifyJsPlugin()
+    })
   ],
+  resolve: {
+    extensions: ['.js', '.css', '.html']
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: 'dist',
+    port: process.env.PORT || 4000,
+    inline: true,
+    host: '0.0.0.0',
+    disableHostCheck: true,
+    hot: true
+  },
 }
