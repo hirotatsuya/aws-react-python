@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "env": "node ./switch_env.js",
-    "start": "yarn env && webpack-dev-server --config webpack.development.config.js --progress --inline --hot --colors",
-    "build": "yarn env && webpack --config webpack.production.config.js --progress --colors",
+    "start": "yarn env && webpack-dev-server --config webpack.config.js --progress --inline --hot --colors",
+    "build": "yarn env && webpack --config webpack.config.js --progress --colors",
     "host": "yarn build && aws s3 sync dist/ s3://aws-react-python"
   },
   "devDependencies": {
