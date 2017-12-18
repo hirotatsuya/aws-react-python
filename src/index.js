@@ -8,12 +8,10 @@ import './styles/main.css'
 import App from './components/App'
 
 ReactDOM.render(
-  <div>
-    <Router>
-      <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-        <App />
-      </MuiThemeProvider>
-    </Router>
-  </div>,
+  <Router>
+    <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+      <App />
+    </MuiThemeProvider>
+  </Router>,
   document.getElementById('root')
 )
