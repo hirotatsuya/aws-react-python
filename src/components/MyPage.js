@@ -111,13 +111,9 @@ export default class MyPage extends Component {
    */
   callBitflyerAPI = () => {
     console.log('callBitflyerAPI')
-    const data = {
-      'key_tmp': 'value_tmp',
-      'key2_tmp': 'value2_tmp'
-    }
-    req.get(config.INVOKE_URL_BY_BITFLYER + 'public')
+    const path = '/v1/markets'
+    req.post(config.INVOKE_URL_BY_BITFLYER + 'public?path=' + path)
     .set('Content-Type', 'application/json')
-    .send(data)
     .end((err, res) => {
       if (err) {
         console.log('err', err)
