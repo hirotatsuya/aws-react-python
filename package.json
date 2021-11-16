@@ -33,7 +33,7 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^1.28.0",
     "aws-api-gateway-client": "^0.2.10",
-    "aws-sdk": "^2.166.0",
+    "aws-sdk": "^2.814.0",
     "material-ui": "^0.20.0",
     "moment": "^2.19.3",
     "react": "^16.2.0",
