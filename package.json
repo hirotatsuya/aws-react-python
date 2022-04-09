@@ -35,7 +35,7 @@
     "aws-api-gateway-client": "^0.2.10",
     "aws-sdk": "^2.166.0",
     "material-ui": "^0.20.0",
-    "moment": "^2.19.3",
+    "moment": "^2.29.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
